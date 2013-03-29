@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/QtTester.dir/main.cpp.o  -o QtTester -rdynamic 
