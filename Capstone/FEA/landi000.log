@@ -1,0 +1,107 @@
+NX Nastran V8.0 (Intel64 Family 6 Model 15 Stepping 11 Windows 7 Service Pack 1) Control File:
+-------------------------------------------------------------------
+Nastran BUFFSIZE=8193 $(c:/femapv103/nastran/conf/nast8.rcf[2])
+$Sdir=$TEMP $(c:/femapv103/nastran/conf/nast8.rcf[8])
+Nastran REAL=1070333952 $(program default)
+JID='c:/users/quade7/dropbox/capstone/fea/landi000.dat'
+OUT='c:/users/quade7/dropbox/capstone/fea/landi000'
+MEM=37302272
+MACH='Intel64 Family 6 Model 15 Stepping 11'
+OPER='Windows 7'
+OSV='Service Pack 1'
+MODEL='Intel(R) Core(TM)2 Quad CPU Q6600 @ 2.40GHz (quade7-PC)'
+CONFIG=8666
+NPROC=4
+sysfield=mapio=no,rawio=yes $(c:/femapv103/nastran/conf/nast8.rcf[10])
+symbol=DELDIR='c:/femapv103/nastran/nxn8/nast/del' $(program default)
+symbol=DEMODIR='c:/femapv103/nastran/nxn8/nast/demo' $(program default)
+symbol=SSSALTERDIR='c:/femapv103/nastran/nxn8/nast/misc/sssalter' $(program default)
+symbol=TPLDIR='c:/femapv103/nastran/nxn8/nast/tpl' $(program default)
+SDIR='c:/users/quade7/appdata/local/temp/landi000.T2372_19'
+DBS='c:/users/quade7/appdata/local/temp/landi000.T2372_19'
+SCR=yes
+NEWDEL='c:/femapv103/nastran/nxn8/em64tnt/SSS'
+DEL='NXNDEF'
+AUTH='28000@LocalHost'
+AUTHQUE=0
+MSGCAT='c:/femapv103/nastran/nxn8/em64tnt/analysis.msg'
+MSGDEST='f06'
+PROG=FEMAP
+-------------------------------------------------------------------
+NXN_ISHELLPATH=C:\FEMAPv103\nastran\bin
+NXN_JIDPATH=
+PATH=c:/femapv103/nastran/nxn8/em64tnt;c:/femapv103/nastran/nxn8/em64tnt/mpi/bin;C:\Program Files\Microsoft HPC Pack 2008 R2\Bin\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Python27\Lib\site-packages\PyQt4;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;C:\Python27\DLLs;C:\Python27\Scripts;C:\Python27\Lib\site-packages\vtk;C:\Python27\gnuplot\binary;C:\Python27\Lib\site-packages\osgeo;C:\Program Files (x86)\pythonxy\SciTE-3.2.2-1;C:\Program Files (x86)\pythonxy\console;C:\MinGW32-xy\bin;C:\Program Files (x86)\pythonxy\swig;C:\Program Files (x86)\pythonxy\gettext\bin;C:\Program Files (x86)\ODS Studio v1.1\MinGW-Radiance-4r1\bin;C:\Elmer7\lib;C:\Elmer7\bin
+Command Line: C:\Users\quade7\Dropbox\Capstone\FEA\Landi000.dat bat=no out=C:\Users\quade7\Dropbox\Capstone\FEA\ scr=yes
+Current Dir: C:\FEMAPv103
+Executable:  c:/femapv103/nastran/nxn8/em64tnt/analysis.exe
+NXN_MSG:     stderr
+FPE:         no
+-------------------------------------------------------------------
+Current resource limits:
+ Physical memory:                     4095 MB
+ Physical memory available:           1994 MB
+ Paging file size:                    8188 MB
+ Paging file size available:          5940 MB
+ Virtual memory:                   8388607 MB
+ Virtual memory available:         8388544 MB
+-------------------------------------------------------------------
+System configuration:
+ Hostname:         quade7-PC
+ Architecture:     em64tnt
+ Platform:         Intel64 Family 6 Model 15 Stepping 11 Windows 7 Service Pack 1
+ Model:            Intel(R) Core(TM)2 Quad CPU Q6600 @ 2.40GHz
+ Clock freq.:      2400 MHz
+ Number of CPUs:   4
+ Executable:       standard
+ Raw model ID:     8666
+ Config number:    8666
+ Physical memory:  4095 MB
+ Virtual memory:   8188 MB
+ Numeric format:   32-bit little-endian IEEE.
+ Bytes per word:   4
+ Disk block size:  512 bytes (128 words)
+ Remote shell cmd: "c:/femapv103/nastran/nxn8/em64tnt/edsrmtcmd.exe" (Windows, UNIX)
+-------------------------------------------------------------------
+NX Nastran started  Wed Mar 13 18:46:19 EDT 2013
+ 18:46:20  Beginning Analysis
+
+ 18:46:20  NX NASTRAN Authorization Information - System Attributes
+ 18:46:20  --------------------------------------------------------
+ 18:46:20  Model: Intel(R) Core(TM)2 Quad CPU Q660
+ 18:46:20  Machine: Intel64 Family 6 Model 15 Steppi
+ 18:46:20  OS: Windows 7
+ 18:46:20  Version: Service Pack 1
+ 18:46:20  License File(s): 28000@LocalHost
+
+ 18:46:20  The FEMAP dll Search String is c:\femapv103\auth_*.dll .
+ 18:46:20  Found the FEMAP authorization dll auth_103.dll
+ 18:46:20  Loading FEMAP Authorization dll auth_103.dll
+
+ 18:46:20  NX NASTRAN Authorization Information - Checkout Successful
+ 18:46:20  ----------------------------------------------------------
+ 18:46:20  License for module NX Nastran Basic - FEMAP Desktop  checked out successfully
+
+                                                                                
+********************************************************************************
+*                                                                              *
+* PCGLSS 7.0: Linear Equations Solver                                          *
+*                                                                              *
+*(C) Copyright 1992-2006 Computational Applications and System Integration Inc.*
+*     All rights Reserved.                                                     *
+*                                                                              *
+* CASI, 2001 South First Street, Champaign, IL 61820.                          *
+*  Ph         (217)244-7875                                                    *
+*  Fax        (217)244-7874                                                    *
+*                                                                              *
+* CASI DOES NOT GUARANTEE THE CORRECTNESS OR USEFULNESS OF THE RESULTS         *
+* OBTAINED USING PCGLSS. CASI IS NOT LIABLE FOR ANY CONCLUSIONS OR ACTIONS     *
+* BASED ON THE RESULTS. IT IS THE RESPONSIBILITY OF THE USER TO CONFIRM THE    *
+* ACCURACY AND USEFULNESS OF THE RESULTS.                                      *
+*                                                                              *
+********************************************************************************
+ 18:46:37  NSEXIT: EXIT(0)
+ 18:46:37  Analysis complete  0
+Real:       18.463 seconds ( 0:00:18.463)
+User:        6.302 seconds ( 0:00:06.302)
+Sys:         0.982 seconds ( 0:00:00.982)
+NX Nastran finished Wed Mar 13 18:46:37 EDT 2013

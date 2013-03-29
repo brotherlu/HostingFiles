@@ -1,0 +1,1 @@
+/home/quade7/Dropbox/Capstone/Code/QtTester-build/CMakeFiles/QtTester.dir

@@ -1,0 +1,28 @@
+digraph Autopilot {
+
+	graph [splines=ortho];
+	rankdir=LR;
+	//splines=false;
+
+	node[shape=box,color=azure4,style="rounded,filled",height=6];	Autopilot;
+	node[shape=box,color=azure3,style="rounded,filled",height=1];	"Velocity Vector";Altitude;"Longitude\n&\nLatitude";Heading;Orientation;
+	node[shape=ellipse,color=lightblue2,style=filled];
+
+	Gyro [label=<Gyroscope(&#947;,&#952;,&#945;)>];
+	"Accelerometer\n(x,y,z)"->"Velocity Vector";
+	Gyro->"Velocity Vector"->Autopilot;
+	Magnetometer->Heading->Autopilot;
+	"Airspeed Sensor"->"Velocity Vector";
+	"Barometric Sensor\n(Course)"->Altitude->Autopilot;
+	GPS->"Longitude\n&\nLatitude"->Autopilot;
+	GPS->Altitude;
+	Gyro->Orientation->Autopilot;	//outputs rad/s
+	//"Sonar\n(Fine)"->Altitude;
+
+	//Output
+	node[shape=parallelogram,color=green,style="rounded,filled"];
+	Autopilot->Throttle;
+	Autopilot->Elevators;
+	Autopilot->Ailerons;
+	Autopilot->Rudder;
+}

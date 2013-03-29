@@ -1,0 +1,54 @@
+digraph Autopilot {
+
+	graph [splines=ortho];
+	rankdir=LR;
+
+	subgraph cluster_0 {
+		style="rounded";
+		color=lightgrey;
+		node [shape=ellipse,color=lightblue2,style=filled];
+		label="Sensors";
+		Gyroscope;Accelerometer;"Airspeed Sensor";Barometer;GPS;Magenetometer;
+	}
+
+	subgraph cluster_1 {
+		style=rounded;
+		color=lightgrey;
+		node [shape=box,color=lightblue2,style=filled];
+		label="Signal Filter";
+		"Kalman Filter";"Average Filter";
+	}
+
+	subgraph cluster_2 {
+		style=rounded;
+		color=lightgrey;
+		node [shape=box,color=lightblue2,style=filled];
+		label="State Estimation";
+		Velocity;Heading;Location;Orientation;Altitude;
+	}
+
+	subgraph cluster_3 {
+		style=rounded;
+		color=lightgrey;
+		node [shape=box,color=lightblue2,style=filled];
+		label="Desired Path";
+		Longitude;Latitude;		
+	}
+
+
+Gyroscope->"Kalman Filter";
+Accelerometer->"Kalman Filter";
+"Airspeed Sensor"->"Kalman Filter";
+
+Barometer->"Average Filter";
+Magenetometer->"Average Filter";
+
+GPS->Location;
+"Kalman Filter"->Velocity;
+Velocity->Velocity [ label="-1" ];
+"Kalman Filter"->Orientation;
+"Average Filter"->Altitude;
+"Average Filter"->Heading;
+
+
+}
